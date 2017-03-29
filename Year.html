@@ -1,0 +1,32 @@
+<h3> {{title}} </h3>
+
+<div class="row" ng-controller="yearCtrl">
+
+<!--
+    <div class="col-sm-6" style="background-color:lavender;">
+        <ul>
+            <li ng-repeat="thing in items">{{thing.name}}: {{thing.budgeted}}</li>
+        </ul>
+    </div>
+-->
+    <div>
+    Year: <select data-ng-options="o.name for o in years" data-ng-model="selectedYear"
+            ng-change="updateYear(selectedYear)"></select>
+    </div>
+    
+    <div> <h2> </h2>
+    
+        <h4> ($M) </h4>
+    </div>
+                
+    <div class="col-sm-6" style="background-color:lavender;">
+      <div ui-grid="{ data: myData }"></div>
+    </div>
+    
+    <div class="col-sm-6" style="background-color:lavenderblush;">
+        <canvas id="doughnut" class="chart chart-doughnut"
+          chart-data="data" chart-labels="labels" chart-legend="true" chart-series="series">
+        </canvas> 
+    </div>
+</div>
+

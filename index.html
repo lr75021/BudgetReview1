@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BC Budget Review</title>
+  <meta charset="utf-8">
+  <!--  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript" src="Budget.json"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+
+    <link rel="styleSheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/4.0.3/ui-grid.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/4.0.3/ui-grid.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-chart.js/1.1.1/angular-chart.min.js"></script>
+
+    <script src="app.js"></script>
+    
+</head>
+
+<body >
+
+    <div class="container" ng-app="app">
+    <header ng-include="'nav.html'"></header>
+    <div ui-view></div>
+    </div>
+
+
+
+</body>
+</html>

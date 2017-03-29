@@ -1,0 +1,24 @@
+  
+<h3> {{title}} </h3>
+
+<div>
+
+    <div>
+    Ministry: <select data-ng-options="o.name for o in ministries" data-ng-model="selectedMinistry"
+            ng-change="updateMinistry(selectedMinistry)"></select>
+    </div>
+    
+    <div> <h3> </h3>
+        <h4> ($M) </h4>
+    </div>
+                
+    <div class="col-sm-6" style="background-color:lavender;">
+      <div ui-grid="gridOptions"></div>  
+    </div>
+    
+    <div>
+        <canvas id="bar" class="chart chart-bar"
+            chart-data="data" chart-labels="labels"> chart-series="series"
+        </canvas>
+    </div>
+</div>
